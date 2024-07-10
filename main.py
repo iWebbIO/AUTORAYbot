@@ -6,8 +6,7 @@ import asyncio
 
 # API Credentials and URLs
 apiSecret = "ql1lGsB7TTO3TOOR2vRjaMgQi2DvmEWtngOkxNtFhTLQaDUne6sZvhRhD0jXUAKC0DtL9EW8fCZO5GdzHaIZyuBM2Re2OdYi"
-tvcbaseurl = "HOST:IP"
-endpoint = "HOST:IP"
+endpoint = "IP:PORT" # Format: "http://HostIP:Port"
 APIE = {
     "key_list": f"{endpoint}/allkeys?key={apiSecret}",
     "new_key": f"{endpoint}/createkey?pass={apiSecret}",
@@ -26,7 +25,7 @@ allowedChannels = []  # List of authorized channels for bot commands
 @bot.event
 async def on_ready():
     """Prints bot information and checks for configuration."""
-    print("AutorayBot by iWebbIO")
+    print("AutoRAYbot by iWebbIO")
     print("v0.9.1-SR")
     print("Report bugs/issues on github.com/iWebbIO/AUTORAYbot")
     print(f'Logged in as {bot.user.name}')
